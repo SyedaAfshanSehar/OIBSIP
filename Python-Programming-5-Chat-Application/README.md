@@ -1,37 +1,36 @@
-# Chat Application
+# OIBSIP Python Task 5 — Chat Application
 
-This is a simple Chat Application created using Python as part of my Oasis Infobyte Python Programming Internship.
+## Beginner tier
+A local client/server chat application using Python sockets and threading.
 
-The application allows users to send and receive messages in real time through a client-server connection. It uses Python socket programming to establish communication between users.
+### Features
+- Server listens on localhost.
+- Client connects to the server.
+- Two or more clients can exchange messages in real time.
+- User names are shown with messages.
+- Join/disconnect notifications are broadcast.
+- Multiple clients are handled with threads.
 
-## Features
+## Run the demo
+Open three terminals.
 
-- Real-time messaging
-- Client-server communication
-- Sending and receiving messages
-- Timestamp with messages
-- Handles user disconnection
-- Works on localhost
+### Terminal 1 — server
+```bash
+python server.py
+```
 
-## Technologies Used
+### Terminal 2 — client 1
+```bash
+python client.py
+```
 
-- Python
-- Socket Programming
-- Threading
+Enter a name and send a message.
 
-## How to Run
+### Terminal 3 — client 2
+```bash
+python client.py
+```
 
-1. Run the server file first.
-2. Open another terminal and run the client file.
-3. Connect the client to the server using localhost.
-4. Start sending and receiving messages.
+Enter a different name and send a message. Messages should appear in both clients.
 
-## What I Learned
-
-Through this project, I learned how client-server communication works, how to use sockets in Python, and how to create a basic real-time chat application.
-
-## Internship
-
-This project was completed for the Oasis Infobyte Python Programming Internship.
-
-**Task 5: Chat Application**
+Use `/quit` to leave.
